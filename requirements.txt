@@ -1,4 +1,4 @@
-numpy
-opencv-python
-pillow
-mediapipe
+numpy==2.4.6
+opencv-contrib-python==5.0.0.93
+pillow==13.0.0
+mediapipe==1.2.0

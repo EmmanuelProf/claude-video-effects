@@ -1,4 +1,8 @@
 .venv/
+inputs/
+outputs/
+.cache/
+*.words.json
 __pycache__/
 *.pyc
 .DS_Store
