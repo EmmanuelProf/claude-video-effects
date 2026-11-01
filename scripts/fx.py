@@ -835,7 +835,8 @@ def spotlight_sparkle(c, e):
     def wimg():
         size = int(H * 0.2)
         while size > 20 and font('didonei', size).getlength(word) > W * 0.86: size = int(size * 0.94)
-        im = gradient_text(word, size, 'didonei', (255, 255, 250), (255, 200, 130), glow=(tuple(int(v * 255) for v in gold), size * 0.06))
+        accent = tuple(int(v * 255) for v in gold)
+        im = gradient_text(word, size, 'didonei', (255, 255, 255), accent, glow=(accent, size * 0.06))
         im = shadowed(im, int(size * 0.05), 0, 200)
         return np.asarray(im, np.float32) / 255
     wa = cached(e, 'w', wimg); wh, ww = wa.shape[:2]
